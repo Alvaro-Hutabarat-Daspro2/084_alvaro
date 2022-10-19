@@ -1,0 +1,41 @@
+program menu;
+uses crt;
+const
+AyamBakar=25000;
+AyamPanggang=25000;
+AyamGulai=23000;
+AyamGoreng=20000;
+AyamSambal=20000;
+AyamRicaRica=30000;
+var
+nomormakan :integer;
+harga :integer;
+
+begin
+clrscr;
+writeln('Pilihan Menu');
+writeln('1.Ayam Bakar');
+writeln('2.Ayam Panggang');
+writeln('3.Ayam Gulai');
+writeln('4.Ayam Goreng');
+writeln('5.Ayam Sambal');
+writeln('6.Ayam Rica-Rica');
+write('Masukkan nomor menu  : ');readln(nomormakan);
+case (nomormakan) of
+    1:writeln('Ayam Bakar.',' Total Harga Yang Harus Di Bayar: ',AyamBakar);
+    2:writeln('Ayam Panggang.',' Total Harga Yang Harus Di Bayar: ',AyamPanggang);
+    3:writeln('Ayam Gulai.',' Total Harga Yang Harus Di Bayar: ',AyamGulai);
+    4:writeln('Ayam Goreng.',' Total Harga Yang Harus Di Bayar: ',AyamGoreng);
+    5:writeln('Ayam Sambal.',' Total Harga Yang Harus Di Bayar: ',AyamSambal);
+    6:writeln('Ayam Rica-rica.','Total Harga Yang Harus Di Bayar: ',AyamRicaRica);
+
+ 
+ else
+ 
+  begin
+        writeln('Tidak ada menu pilihan yang di pesan');
+    end;
+    end;
+    readln;
+
+end.
